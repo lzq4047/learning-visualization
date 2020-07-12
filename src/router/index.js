@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import HierarchyCanvas from "../views/HierarchyCanvas.vue";
 import HierarchySvg from "../views/HierarchySvg.vue";
 
+import WebGLBaseRender from '../views/webgl/BaseRender.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -30,6 +32,11 @@ const routes = [
     path: "/hierarchy/svg",
     name: "HierarchySvg",
     component: HierarchySvg,
+  },
+  {
+    path: "/webgl/base-render",
+    name: "webGLBaseRender",
+    component: WebGLBaseRender,
   },
 ];
 
