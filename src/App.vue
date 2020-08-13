@@ -5,6 +5,7 @@
       <router-link to="/hierarchy/canvas">Canvas Hierarchy</router-link> |
       <router-link to="/hierarchy/svg">Svg Hierarchy</router-link> |
       <router-link to="/webgl/base-render">WebGL Base Render</router-link> |
+      <router-link to="/mountaion-and-sun/canvas">Mountain And Sun</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -31,5 +32,17 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.canvas.a4,
+.svg.a4 {
+  width: 842px;
+  height: 595px;
+}
+
+.canvas.square,
+.svg.square {
+  width: 80vh;
+  height: 80vh;
 }
 </style>

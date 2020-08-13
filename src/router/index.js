@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import HierarchyCanvas from "../views/HierarchyCanvas.vue";
 import HierarchySvg from "../views/HierarchySvg.vue";
+import MountainAndSun from "../views/MountainAndSun.vue";
 
 import WebGLBaseRender from '../views/webgl/BaseRender.vue';
 
@@ -37,6 +38,11 @@ const routes = [
     path: "/webgl/base-render",
     name: "webGLBaseRender",
     component: WebGLBaseRender,
+  },
+  {
+    path: "/mountaion-and-sun/canvas",
+    name: "mountainAndSun",
+    component: MountainAndSun,
   },
 ];
 

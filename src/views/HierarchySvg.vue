@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h3>Svg Hierarchy</h3>
-    <svg class="svg" :viewBox="`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`" :width="VIEWBOX_WIDTH" :height="VIEWBOX_HEIGHT" xmlns="http://www.w3.org/2000/svg" fill="rgba(0,0,0,0.2)">
+    <svg class="svg square" :viewBox="`0 0 ${VIEWBOX_WIDTH} ${VIEWBOX_HEIGHT}`" :width="VIEWBOX_WIDTH" :height="VIEWBOX_HEIGHT" xmlns="http://www.w3.org/2000/svg" fill="rgba(0,0,0,0.2)">
       <hierarchy-svg-node v-if="root" :node="root"></hierarchy-svg-node>
     </svg>
   </div>
@@ -34,8 +34,4 @@ export default {
 </script>
 
 <style scoped>
-  .svg {
-    width: 800px;
-    height: 800px;
-  }
 </style>

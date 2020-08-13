@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <h3>Canvas Hierarchy</h3>
-    <canvas class="canvas" :class="{ 'node--crossed': crossedNode }" ref="canvas"></canvas>
+    <canvas class="canvas square" :class="{ 'node--crossed': crossedNode }" ref="canvas"></canvas>
   </div>
 </template>
 
@@ -111,10 +111,6 @@ export default {
 </script>
 
 <style scoped>
-  .canvas {
-    width: 800px;
-    height: 800px;
-  }
   .node--crossed {
     cursor: pointer;
   }
