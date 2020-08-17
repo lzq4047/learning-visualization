@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import HierarchyCanvas from "../views/HierarchyCanvas.vue";
 import HierarchySvg from "../views/HierarchySvg.vue";
 import MountainAndSun from "../views/MountainAndSun.vue";
+import Tree from '../views/Tree.vue';
 
 import WebGLBaseRender from '../views/webgl/BaseRender.vue';
 
@@ -44,6 +45,11 @@ const routes = [
     name: "mountainAndSun",
     component: MountainAndSun,
   },
+  {
+    path: '/tree/canvas',
+    name: 'TreeCanvas',
+    component: Tree
+  }
 ];
 
 const router = new VueRouter({

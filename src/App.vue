@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <!-- <router-link to="/">Home</router-link> | -->
       <router-link to="/hierarchy/canvas">Canvas Hierarchy</router-link> |
       <router-link to="/hierarchy/svg">Svg Hierarchy</router-link> |
       <router-link to="/webgl/base-render">WebGL Base Render</router-link> |
       <router-link to="/mountaion-and-sun/canvas">Mountain And Sun</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/tree/canvas">Tree</router-link> |
+      <!-- <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
   </div>

@@ -17,7 +17,6 @@ export default {
       const canvas = this.$refs.canvas;
       canvas.width = 425;
       canvas.height = 250;
-      console.log(rough);
       
       const rc = rough.canvas(canvas);
       const ctx = rc.ctx;
@@ -28,11 +27,8 @@ export default {
 
       rc.path('M-180 0L-80 100L20 0', { fill: 'rgb(0, 155, 0)', roughness: 1.8 });
       rc.path('M180 0L80 100L-20 0', { fill: 'rgb(0, 255, 0)', roughness: 2.8 });
-      rc.circle(0, 150, 100, { fill: 'yellow', roughness: 1.8 })
+      rc.circle(0, 150, 100, { fill: 'yellow', roughness: 1.8, stroke: 'red' })
     }
   }
 }
 </script>
-
-<style scoped>
-</style>
